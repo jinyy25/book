@@ -1,0 +1,81 @@
+
+plugins {
+    id 'org.springframework.boot' version '2.7.8'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'war'
+    id "com.ewerk.gradle.plugins.querydsl" version "1.0.10"
+}
+
+
+group = 'kr.res.book'
+version = '0.0.1-SNAPSHOT'
+
+configurations {
+   compileOnly {
+      extendsFrom annotationProcessor
+   }
+}
+
+repositories {
+   mavenCentral()
+}
+
+dependencies {
+    // Spring Boot Starter Web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Spring Boot Starter Data JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // MariaDB JDBC driver
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.3.0'
+
+    //Querydsl 추가
+    implementation 'com.querydsl:querydsl-jpa:5.0.0'
+    implementation 'com.querydsl:querydsl-apt:5.0.0:jpa'
+    implementation 'com.querydsl:querydsl-sql:5.0.0'
+
+    // H2 Database for JPA (runtime dependency)
+    runtimeOnly 'com.h2database:h2'
+
+    // Lombok (for annotation processing)
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    // SLF4J API binding
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+
+    // Gson 라이브러리 추가
+    implementation 'com.google.code.gson:gson:2.8.8'
+
+    // Spring Boot Starter Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+
+
+test {
+   useJUnitPlatform()
+}
+
+
+//querydsl 추가 시작
+def querydslDir = "$buildDir/generated/querydsl"
+
+querydsl {
+	jpa = true
+	querydslSourcesDir = querydslDir
+}
+sourceSets {
+	main.java.srcDir querydslDir
+}
+compileQuerydsl{
+	options.annotationProcessorPath = configurations.querydsl
+}
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+	querydsl.extendsFrom compileClasspath
+}
+//querydsl 추가 끝

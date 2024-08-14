@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kr.res.store.book.controller.BookControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-07-16T12:34:12" hostname="BOOK-0PJNTIHCT8" time="1.818">
+  <properties/>
+  <testcase name="책추가하기" classname="kr.res.store.book.controller.BookControllerTest" time="1.742"/>
+  <testcase name="책상태 변경" classname="kr.res.store.book.controller.BookControllerTest" time="0.024"/>
+  <testcase name="책정보 가져오기" classname="kr.res.store.book.controller.BookControllerTest" time="0.024"/>
+  <testcase name="책 카테고리 변경" classname="kr.res.store.book.controller.BookControllerTest" time="0.023"/>
+  <system-out><![CDATA[21:34:13.806 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	k.r.s.b.c.BookController:
+	{POST [/api/book/list]}: getBookList(BookRequestDto)
+	{POST [/api/book/add]}: addBook(BookRequestDto)
+	{POST [/api/book/updateBook]}: updateBook(BookRequestDto)
+	{POST [/api/book/updateCategory]}: updateCategory(BookRequestDto)
+21:34:13.824 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+21:34:14.110 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+21:34:14.150 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+21:34:14.182 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+21:34:14.182 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+21:34:14.182 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+21:34:14.182 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+21:34:14.182 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2948d818
+21:34:14.182 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@150a09cd
+21:34:14.182 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+21:34:14.182 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+21:34:14.279 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/api/book/add", parameters={}
+21:34:14.294 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to kr.res.store.book.controller.BookController#addBook(BookRequestDto)
+21:34:14.388 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [kr.res.store.book.dto.BookRequestDto@4e8d2948]
+21:34:14.444 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+21:34:14.444 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing ["OK"]
+21:34:14.450 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+21:34:14.547 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	k.r.s.b.c.BookController:
+	{POST [/api/book/list]}: getBookList(BookRequestDto)
+	{POST [/api/book/add]}: addBook(BookRequestDto)
+	{POST [/api/book/updateBook]}: updateBook(BookRequestDto)
+	{POST [/api/book/updateCategory]}: updateCategory(BookRequestDto)
+21:34:14.547 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+21:34:14.562 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+21:34:14.562 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+21:34:14.562 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+21:34:14.562 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+21:34:14.562 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+21:34:14.562 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+21:34:14.562 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@37ee9ef9
+21:34:14.562 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4e83cd66
+21:34:14.562 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+21:34:14.562 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+21:34:14.562 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/api/book/updateBook", parameters={}
+21:34:14.562 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to kr.res.store.book.controller.BookController#updateBook(BookRequestDto)
+21:34:14.562 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [kr.res.store.book.dto.BookRequestDto@2c323848]
+21:34:14.562 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+21:34:14.562 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing ["OK"]
+21:34:14.562 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+21:34:14.577 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	k.r.s.b.c.BookController:
+	{POST [/api/book/list]}: getBookList(BookRequestDto)
+	{POST [/api/book/add]}: addBook(BookRequestDto)
+	{POST [/api/book/updateBook]}: updateBook(BookRequestDto)
+	{POST [/api/book/updateCategory]}: updateCategory(BookRequestDto)
+21:34:14.577 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+21:34:14.577 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+21:34:14.593 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+21:34:14.593 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+21:34:14.593 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+21:34:14.593 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+21:34:14.593 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+21:34:14.593 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@22c877ff
+21:34:14.593 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@60e42b4f
+21:34:14.593 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+21:34:14.593 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+21:34:14.593 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/api/book/list", parameters={}
+21:34:14.593 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to kr.res.store.book.controller.BookController#getBookList(BookRequestDto)
+21:34:14.593 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [kr.res.store.book.dto.BookRequestDto@5a4ba848]
+21:34:14.593 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+21:34:14.593 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Nothing to write: null body
+21:34:14.593 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+21:34:14.609 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	k.r.s.b.c.BookController:
+	{POST [/api/book/list]}: getBookList(BookRequestDto)
+	{POST [/api/book/add]}: addBook(BookRequestDto)
+	{POST [/api/book/updateBook]}: updateBook(BookRequestDto)
+	{POST [/api/book/updateCategory]}: updateCategory(BookRequestDto)
+21:34:14.609 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+21:34:14.609 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+21:34:14.620 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+21:34:14.620 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+21:34:14.620 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+21:34:14.620 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+21:34:14.620 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+21:34:14.620 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1b046a2c
+21:34:14.620 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@365076
+21:34:14.620 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+21:34:14.620 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+21:34:14.620 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/api/book/updateCategory", parameters={}
+21:34:14.620 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to kr.res.store.book.controller.BookController#updateCategory(BookRequestDto)
+21:34:14.625 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [kr.res.store.book.dto.BookRequestDto@3fdceb00]
+21:34:14.625 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+21:34:14.625 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing ["OK"]
+21:34:14.625 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
